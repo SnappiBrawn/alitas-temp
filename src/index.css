@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'SF-Pro-Display';
+    src: url('./fonts/SFPRODISPLAYREGULAR.OTF');
+}
+
+@theme{
+    --font-DM Sans: DM Sans, sans-serif;
+    --font-SF-Pro-Display: SF-Pro-Display, sans-serif;
+    --color-primary: #6E2ECD;
+    --color-secondary: #F2EBFE;
+    --color-section-heading: #4908C6;
+    --theme-gradient-from: #AA73D7;
+    --theme-gradient-to: #4A09C7;
+}
