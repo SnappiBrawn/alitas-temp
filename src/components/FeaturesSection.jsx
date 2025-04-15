@@ -8,7 +8,7 @@ const FeaturesSection = () => {
       <div className="flex flex-col lg:flex-row items-center justify-between gap-10 text-left">
         <div className="lg:w-1/2">
           <p className="text-(--color-section-heading) lg:text-sm text-xs font-bold uppercase mb-5 px-4 lg:px-0">
-            25 million Australians, 490 languages but healthcare is accessible in only 1 language?
+            25 million Australians, 490 languages <br/>healthcare is accessible in only 1 language?
           </p>
           <p className="text-2xl px-4 lg:px-0 lg:text-[2.75rem]/16 font-bold leading-tight text-gray-900">
             Real-time, Precise Language Translation – Available around-the-clock, Anywhere, At Your Fingertips
@@ -31,7 +31,7 @@ const FeaturesSection = () => {
       <div className="flex flex-col lg:flex-row-reverse items-center justify-between gap-10 text-left lg:text-left">
         <div className="lg:w-1/2">
           <p className="text-(--color-section-heading) lg:text-sm text-xs font-bold uppercase mb-5 px-4 lg:px-0">
-            140,000 incidents of misdiagnosis in Australia. 80% attributed to communication issues.
+            140,000 incidents of misdiagnosis in Australia. <br/>80% attributed to communication issues.
           </p>
           <p className="text-2xl px-4 lg:px-0 lg:text-[2.75rem]/16 font-bold leading-tight text-gray-900">
             Efficient Communication Through Context-Driven Medical Terminology
@@ -53,7 +53,7 @@ const FeaturesSection = () => {
       <div className="flex flex-col lg:flex-row items-center justify-between gap-10 text-left lg:text-left">
         <div className="lg:w-1/2">
           <p className="text-(--color-section-heading) lg:text-sm text-xs font-bold uppercase mb-5 px-4 lg:px-0">
-            12.9 million individuals may have had their medical history exposed in Australia. Is the patient's data secure?
+            12.9 million individuals may have had their medical history exposed in Australia. <br/>Is the patient's data secure?
           </p>
           <p className="text-2xl px-4 lg:px-0 lg:text-[2.75rem]/16 font-bold leading-tight text-gray-900">
             Protecting Every Conversation – Privacy-Driven Communication in Healthcare
