@@ -19,9 +19,10 @@ const Navbar = () => {
   };
 
   const navLinks = [
-    { label: "Home", href: "#home" },
-    { label: "Live Preview", href: "#live-preview" },
-    { label: "FAQs", href: "#faqs" },
+    { label: "Platform", href: "#platform" },
+    { label: "Solutions", href: "#solutions" },
+    { label: "About Us", href: "#about-us" },
+    { label: "Contact Us", href: "#contact-us" },
   ];
 
   return (
@@ -29,8 +30,8 @@ const Navbar = () => {
     <nav className="my-6 font-[SF-Pro-Display] w-full" style={{ paddingInline: "0.02rem" }} id="nav">
       {/* max-w-[1440px] - removed */}
       <div className="bg-white rounded-3xl lg:px-5 px-2 py-4 flex justify-between items-center mx-auto" style={{ marginInline: 0 }}>
-        <div className="flex items-center text-[20px] font-[600] tracking-wider text-(--color-primary)">
-          <img className="w-8 h-8" src={icon} alt="alitas" />
+        <div className="flex items-center text-[1.25rem] lg:text-[2rem] font-[600] tracking-wider text-(--color-primary)">
+          <img className="w-8 h-8 lg:h-16 lg:w-16" src={icon} alt="alitas" />
           alitas
         </div>
 
