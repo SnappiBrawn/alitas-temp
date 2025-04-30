@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import icon from "../assets/icon.png";
 
-import { IconMenu2, IconPhone, IconX } from "@tabler/icons-react";
+import { IconMenu2, IconKey, IconX } from "@tabler/icons-react";
 
 const Navbar = () => {
   // const [activeTab, setActiveTab] = useState("#home");
@@ -53,7 +53,7 @@ const Navbar = () => {
         <div className="hidden md:block">
           <button className="border border-purple-600 px-4 py-2 rounded-full hover:bg-purple-50 transition">
             <div className="flex items-center gap-2 bg-gradient-to-r from-[#AA73D7] to-[#4A09C7] text-transparent bg-clip-text">
-              <IconPhone className="text-(--color-primary)" stroke={1} /> Get in Touch
+              <IconKey className="text-(--color-primary)" stroke={1} /> Sign In
             </div>
           </button>
         </div>
@@ -61,7 +61,7 @@ const Navbar = () => {
           <div>
             <button className="border border-purple-600 px-3 py-2 rounded-full hover:bg-purple-50 transition">
               <div className="flex items-center gap-0 bg-gradient-to-r from-[#AA73D7] to-[#4A09C7] text-transparent bg-clip-text text-sm">
-                <IconPhone className="text-(--color-primary)" stroke={1} size={20} /> Get in Touch
+                <IconKey className="text-(--color-primary)" stroke={1} size={20} /> Sign In
               </div>
             </button>
           </div>

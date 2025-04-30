@@ -61,7 +61,7 @@ const FeaturesSection = () => {
           <p className="text-2xl px-4 lg:px-0 lg:text-[2.75rem]/16 font-bold leading-tight text-gray-900">
             Protecting Every Conversation – Privacy-Driven Communication in Healthcare
           </p>
-          <p className="text-sm/6 lg:text-base/7 mt-6 text-gray-500 max-w-xl px-4 lg:px-0 lg:text-left text-justify">
+          <p className="text-sm/6 lg:text-base/6.25 mt-6 text-gray-500 max-w-xl px-4 lg:px-0 lg:text-left text-justify">
             <b>Alitas AI</b> places security at the forefront, ensuring every communication between healthcare provider and patient remains
             confidential. By removing the need for third-party presence during medical consultations between patients and providers, Alitas enables a
             seamless and secure mode of communication.

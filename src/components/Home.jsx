@@ -10,6 +10,7 @@ import WhatWeOffer from "./WhatWeOffer";
 import IndustriesWeServe from "./IndustriesWeServe";
 import Platforms from "./Platforms";
 import ScrollToTop from "./ScrollToTop";
+import RotatingText from "../util/RotatingText";
 
 const Home = () => {
   return (

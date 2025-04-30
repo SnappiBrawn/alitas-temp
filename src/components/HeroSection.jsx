@@ -1,11 +1,18 @@
 import React from "react";
 import Navbar from "./Navbar";
+import RotatingText from "../util/RotatingText";
 
 import HeroBackground from "../assets/hero_section_bg.png";
 import upcoming from "../assets/rtrt.png";
 import quickAccess from "../assets/quick_access_new.png";
 import language from "../assets/language.png";
 import mobileFeatures from "../assets/mobile features.png";
+
+const textItems = [
+  "Enhancing Healthcare by Breaking Language Barriers",
+  "Les soins de santé en brisant barrières linguistiques",
+  "La atención sanitaria rompiendo barreras lingüísticas",
+];
 
 function HeroSection() {
   return (
@@ -18,17 +25,17 @@ function HeroSection() {
         paddingBottom: "100px",
       }}
     >
-      <div className="bg-(--color-secondary) lg:m-10 lg:pt-4 lg:p-8 m-4 pt-1 p-2 rounded-3xl lg:pb-[13%] pb-[50%]">
+      <div className="bg-[linear-gradient(90deg,#F6EAFF_0%,#EDF0FF_41%,#BAC8FF_75%,#BBA3FF_100%)] lg:m-10 lg:pt-4 lg:p-8 m-4 pt-1 p-2 rounded-3xl lg:pb-[13%] pb-[50%]">
         <Navbar />
         <div className="lg:mx-[15%] mx-1 text-center lg:pt-10 pt-5">
-          <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-6xl/22 font-[700] font-[SF Pro Display] leading-tight text-[#1F1F1F] mb-6">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-6xl/22 font-[700] font-[SF Pro Display] leading-[138%] text-[#1F1F1F] mb-6">
             <span className="bg-gradient-to-r from-[#AA73D7] to-[#4A09C7] text-transparent bg-clip-text"> Alitas AI</span>– Enhancing Healthcare by
             Breaking Language Barriers
           </h1>
-          <p className="lg:text-lg text-sm/6 lg:max-w-[80%] lg:mx-auto">
-            <b>Alitas AI</b> uses advanced technology to overcome language barriers that hinder patient care, reducing considerable wait times. Available
-            24/7, this innovative solution promotes effortless communication between healthcare providers and patients, regardless of language. By
-            enhancing care quality and empowering patients, Alitas creates a more inclusive, and patient-centric healthcare ecosystem.
+          <p className="lg:text-lg text-sm/6 lg:max-w-[80%] lg:mx-auto leading-[148%]">
+            <b>Alitas AI</b> uses advanced technology to overcome language barriers that hinder patient care, reducing considerable wait times.
+            Available 24/7, this innovative solution promotes effortless communication between healthcare providers and patients, regardless of
+            language. By enhancing care quality and empowering patients, Alitas creates a more inclusive, and patient-centric healthcare ecosystem.
           </p>
         </div>
       </div>
