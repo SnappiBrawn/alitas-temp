@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "./Navbar";
-import RotatingText from "../util/RotatingText";
 
 import HeroBackground from "../assets/hero_section_bg.png";
 import upcoming from "../assets/rtrt.png";
