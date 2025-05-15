@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import Navbar from "./Navbar";
 import RotatingText from "../util/RotatingText";
 
@@ -7,7 +7,6 @@ import upcoming from "../assets/rtrt.png";
 import quickAccess from "../assets/quick_access_new.png";
 import language from "../assets/language.png";
 import mobileFeatures from "../assets/mobile features.png";
-import heroVideo from "../assets/Hero assets/Hero video.mp4";
 
 const textItems = [
   "Enhancing Healthcare by Breaking Language Barriers",
@@ -16,25 +15,6 @@ const textItems = [
 ];
 
 function HeroSection() {
-
-  const videoRef = useRef(null);
-  const mobileVideoRef = useRef(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [isPlayingOnMobile, setIsPlayingOnMobile] = useState(false);
-
-  const handlePlay = () => {
-    if (videoRef.current) {
-      videoRef.current.play();
-      setIsPlaying(true);
-    }
-  };
-  const handleMobilePlay = () => {
-    if (mobileVideoRef.current) {
-      mobileVideoRef.current.play();
-      setIsPlayingOnMobile(true);
-    }
-  };
-
   return (
     <div
       style={{
@@ -48,16 +28,10 @@ function HeroSection() {
       <div className="bg-[linear-gradient(90deg,#F6EAFF_0%,#EDF0FF_41%,#BAC8FF_75%,#BBA3FF_100%)] lg:m-10 lg:pt-4 lg:p-8 m-4 pt-1 p-2 rounded-3xl lg:pb-[13%] pb-[50%]">
         <Navbar />
         <div className="lg:mx-[15%] mx-1 text-center lg:pt-10 pt-5">
-          <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-6xl/22 font-[700] font-[SF Pro Display] leading-[138%] text-[#1F1F1F] mb-6">
-            {" "}
-            {/* Experiment with line clamp */}
+          <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-6xl/22 font-[700] font-[SF Pro Display] leading-[138%] text-[#1F1F1F] mb-6"> {/* Experiment with line clamp */}
             <span className="bg-gradient-to-r from-[#AA73D7] to-[#4A09C7] text-transparent bg-clip-text"> Alitas AI</span>–{" "}
-            <RotatingText items={textItems} cursor={true} typingInterval={50} />
+            <RotatingText items={textItems} cursor={true} typingInterval={50}/>
           </h1>
-          {/* <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-6xl/22 font-[700] font-[SF Pro Display] leading-tight text-[#1F1F1F] mb-6">
-            <span className="bg-gradient-to-r from-[#AA73D7] to-[#4A09C7] text-transparent bg-clip-text"> Alitas AI</span>– Enhancing Healthcare by
-            Breaking Language Barriers
-          </h1> */}
           <p className="lg:text-lg text-sm/6 lg:max-w-[80%] lg:mx-auto leading-[148%]">
             <b>Alitas AI</b> uses advanced technology to overcome language barriers that hinder patient care, reducing considerable wait times.
             Available 24/7, this innovative solution promotes effortless communication between healthcare providers and patients, regardless of
@@ -90,31 +64,20 @@ function HeroSection() {
           />
         </div>
         {/* Main Video Section */}
-        <div className="relative bg-[#efe8fc] rounded-[20px] overflow-hidden drop-shadow-2xl w-full max-w-[759px] aspect-video z-10 m-auto">
-          <video
-            ref={videoRef}
-            className="absolute top-0 left-[50%] transform -translate-x-1/2 h-full object-contain"
-            src={heroVideo}
-            onEnded={() => setIsPlaying(false)}
-          />
-          {!isPlaying && (
-            <button
-              onClick={handlePlay}
-              className="absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-[#262626] flex items-center justify-center border-t-2 border-purple-500 shadow-md"
+        <div className="relative bg-white rounded-[20px] overflow-hidden drop-shadow-2xl w-full max-w-[759px] h- aspect-video z-10 m-auto">
+          <button className="absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-[#262626] flex items-center justify-center border-t-2 border-purple-500 shadow-md">
+            <svg
+              viewBox="0 0 24 24"
+              className="w-6 h-6 text-white"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.8"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
-              <svg
-                viewBox="0 0 24 24"
-                className="w-6 h-6 text-white"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.8"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M8 5v14l11-7z" />
-              </svg>
-            </button>
-          )}
+              <path d="M8 5v14l11-7z" />
+            </svg>
+          </button>
         </div>
       </div>
       <div className="relative mt-[-125px] lg:hidden pb-10">
@@ -138,31 +101,20 @@ function HeroSection() {
           />
         </div>
         {/* Main Video Section */}
-        <div className="relative bg-[#efe8fc] rounded-xl overflow-hidden drop-shadow-2xl w-full max-w-[80%] aspect-video z-10 m-auto">
-          <video
-            ref={mobileVideoRef}
-            className="absolute top-0 left-[50%] transform -translate-x-1/2 h-full object-conta"
-            src={heroVideo}
-            onEnded={() => setIsPlayingOnMobile(false)}
-          />
-          {!isPlayingOnMobile && (
-            <button
-              onClick={handleMobilePlay}
-              className="absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-[#262626] flex items-center justify-center border-t-2 border-purple-500 shadow-md"
+        <div className="relative bg-white rounded-xl overflow-hidden drop-shadow-2xl w-full max-w-[80%] aspect-video z-10 m-auto">
+          <button className="absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-[#262626] flex items-center justify-center border-t-2 border-purple-500 shadow-md">
+            <svg
+              viewBox="0 0 24 24"
+              className="w-6 h-6 text-white"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.8"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
-              <svg
-                viewBox="0 0 24 24"
-                className="w-6 h-6 text-white"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.8"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M8 5v14l11-7z" />
-              </svg>
-            </button>
-          )}
+              <path d="M8 5v14l11-7z" />
+            </svg>
+          </button>
         </div>
       </div>
     </div>

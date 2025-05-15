@@ -34,7 +34,7 @@ function IndustriesWeServe() {
         return (
           <>
             <h2 className="text-2xl font-bold text-left">Alitas AI bridges the gap. </h2>
-            <p className="text-sm/6 lg:text-lg/7 mt-2 text-gray-500 text-left">
+            <p className="text-sm/6 lg:text-lg/7 mt-2 text-gray-500 lg:max-w-[90%] text-left">
               With real-time, medically precise translation available at all times, healthcare providers and clinicians can prioritise the ultimate
               goal—providing superior care and improving patient experiences.
             </p>
@@ -71,7 +71,7 @@ function IndustriesWeServe() {
         return (
           <>
             <h2 className="text-2xl font-bold text-left">Alitas AI bridges the gap. </h2>
-            <p className="text-sm/6 lg:text-lg/7 mt-2 text-gray-500 text-left">
+            <p className="text-sm/6 lg:text-lg/7 mt-2 text-gray-500 lg:max-w-[90%] text-left">
               With real-time language translation, immigration officials can strategically focus on their core responsibility — delivering
               high-quality and personalised guidance to each applicant.
             </p>
@@ -105,7 +105,7 @@ function IndustriesWeServe() {
         return (
           <>
             <h2 className="text-2xl font-bold text-left">Alitas AI bridges the gap. </h2>
-            <p className="text-sm/6 lg:text-lg/7 mt-2 text-gray-500 text-left">
+            <p className="text-sm/6 lg:text-lg/7 mt-2 text-gray-500 lg:max-w-[90%] text-left">
               By enabling seamless communication, tourism enterprises can prioritise what truly matters — delivering authentic, transformative
               experiences that creates a newfound appreciation for local culture among travellers.
             </p>
@@ -139,7 +139,7 @@ function IndustriesWeServe() {
         return (
           <>
             <h2 className="text-2xl font-bold text-left">Alitas AI bridges the gap. </h2>
-            <p className="text-sm/6 lg:text-lg/7 mt-2 text-gray-500 text-left">
+            <p className="text-sm/6 lg:text-lg/7 mt-2 text-gray-500 lg:max-w-[90%] text-left">
               Real-time translation enables financial institutions to engage clients worldwide by breaking down language barriers, enhancing
               understanding of complex financial information, and expediting informed decision-making to achieve personalised financial goals.
             </p>
@@ -173,7 +173,7 @@ function IndustriesWeServe() {
         return (
           <>
             <h2 className="text-2xl font-bold text-left">Alitas AI bridges the gap. </h2>
-            <p className="text-sm/6 lg:text-lg/7 mt-2 text-gray-500 text-left">
+            <p className="text-sm/6 lg:text-lg/7 mt-2 text-gray-500 lg:max-w-[90%] text-left">
               With real-time, precise translation available at all times, manufacturers can optimise global supply chains, fueling innovation and
               competitiveness.
             </p>
