@@ -64,7 +64,7 @@ const Navbar = ({ activeTab = "" }) => {
           </NavLink>
           <NavLink
             key={"/contact-us"}
-            to="#"
+            to="/contact-us"
             className={`hover:text-gray-400 relative transition-colors duration-300 cursor-pointer ${
               activeTab === "/contact-us" ? "hover:text-stone-950 font-bold " : ""
             }`}
@@ -107,8 +107,9 @@ const Navbar = ({ activeTab = "" }) => {
           >
             Platform
           </span>
-          <span
+          <NavLink
             key={"#solutions"}
+            to="/"
             onClick={() => {
               navigate("#solutions");
               setMenuOpen(false);
@@ -116,7 +117,7 @@ const Navbar = ({ activeTab = "" }) => {
             className={`text-lg ${activeTab === "#solutions" ? "text-purple-500" : "text-gray-800"}`}
           >
             Solutions
-          </span>
+          </NavLink>
           <NavLink key={"#about-us"} to={"/about-us"} className={`text-lg ${activeTab === "/about-us" ? "text-purple-500" : "text-gray-800"}`}>
             About Us
           </NavLink>

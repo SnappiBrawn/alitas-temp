@@ -65,7 +65,7 @@ const industriesWeServe = [
 function About() {
   return (
     <div className="font-[SF-Pro-Display]">
-      <div className="bg-[linear-gradient(90deg,#AC73D966_0%,#4A00C966_100%)] lg:m-10 lg:pt-4 lg:p-8 m-4 pt-1 p-6 rounded-3xl">
+      <div className="bg-[linear-gradient(90deg,#AC73D966_0%,#4A00C966_100%)] lg:m-10 lg:pt-4 lg:p-8 m-4 pt-1 p-2 rounded-3xl">
         <nav
           className="bg-white lg:bg-transparent my-6 font-[SF-Pro-Display] w-full lg:rounded-3xl rounded-full"
           style={{ paddingInline: "0.02rem" }}
