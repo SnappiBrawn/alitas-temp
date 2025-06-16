@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { motion } from "motion/react";
 
 import bg1 from "../assets/features/bg1.png";
 import s1mobile from "../assets/features/section1mob.png";
@@ -91,9 +92,14 @@ const FeaturesSection = () => {
             <div className="absolute top-0 left-0 w-full h-full">
               <div ref={sliderRef1} className="flex transition-transform duration-500 items-center" style={{ width: `100%`, height: "100%" }}>
                 {featureImages1.map((image, index) => (
-                  <div key={index} className="flex w-[100%] h-[100%] flex-shrink-0 items-center justify-center p-8">
+                  <motion.div
+                    initial={{ scale: 0 }}
+                    whileInView={{ scale: 1, transition: { duration: 0.3, ease: "easeOut" } }}
+                    key={index}
+                    className="flex w-[100%] h-[100%] flex-shrink-0 items-center justify-center p-8"
+                  >
                     <img src={image.src} alt={`Device ${index + 1}`} className={`object-contain ${image.orientation === "portrait" ? "h-full" : "w-full"}`} style={{ objectPosition: "top" }} />
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </div>
