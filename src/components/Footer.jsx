@@ -49,11 +49,11 @@ const Footer = () => {
           <div>
             <h3 className="font-bold text-lg mb-5">Solutions</h3>
             <ul className="space-y-4">
-              <li onClick={() => onClick("Healthcare")}>Healthcare</li>
-              <li onClick={() => onClick("Immigration")}>Immigration</li>
-              <li onClick={() => onClick("Tourism")}>Tourism</li>
-              <li onClick={() => onClick("Finance")}>Finance</li>
-              <li onClick={() => onClick("Manufacturing")}>Manufacturing</li>
+              <li className="w-[max-content] cursor-pointer hover:text-black" onClick={() => onClick("Healthcare")}>Healthcare</li>
+              <li className="w-[max-content] cursor-pointer hover:text-black" onClick={() => onClick("Immigration")}>Immigration</li>
+              <li className="w-[max-content] cursor-pointer hover:text-black" onClick={() => onClick("Tourism")}>Tourism</li>
+              <li className="w-[max-content] cursor-pointer hover:text-black" onClick={() => onClick("Finance")}>Finance</li>
+              <li className="w-[max-content] cursor-pointer hover:text-black" onClick={() => onClick("Manufacturing")}>Manufacturing</li>
             </ul>
           </div>
 
@@ -70,10 +70,10 @@ const Footer = () => {
           <div>
             <h3 className="font-bold text-lg mb-5">Company</h3>
             <ul className="space-y-4">
-              <li onClick={() => navigate("/about-us")} className="cursor-pointer hover:text-black">
+              <li onClick={() => navigate("/about-us")} className="w-[max-content] cursor-pointer hover:text-black">
                 About Us
               </li>
-              <li onClick={() => navigate("/contact-us")} className="cursor-pointer hover:text-black">
+              <li onClick={() => navigate("/contact-us")} className="w-[max-content] cursor-pointer hover:text-black">
                 Contact Us
               </li>
             </ul>
